@@ -1,11 +1,7 @@
-#Creative Tabs
+#Blocks
 itemGroup.ReactioncraftItems=RC: Items
 itemGroup.Reactioncraft=RC: Blocks
 itemGroup.Reactioncraftfood=RC: Foods
-
-#Blocks
-tile.hireoglyph.Block.name=Hireoglyph
-
 
 #Items
 item.reactioncraft.caught.name=Caught
@@ -41,30 +37,93 @@ item.reactioncraft.YellowTailRaw.name=Raw Yellow Tail
 item.reactioncraft.YellowTailCooked.name=Yellow Tail
 item.reactioncraft.creative_net.name=Magic Catching Net
 item.reactioncraft.SandStonePaste.name=Sandstone Paste
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
-item.reactioncraft.
+item.Knife.name=Knife
+item.reactioncraft.UncutLBGem.name=Uncut Light Gem
+item.reactioncraft.CutLBGem.name=Cut Light Gem
+item.reactioncraft.UncutDBGem.name=Uncut Dark Gem
+item.reactioncraft.CutDBGem.name=Cut Dark Gem
+item.reactioncraft.scroll.name=Scroll
+item.reactioncraft.Hammer.name=Hammer
+item.reactioncraft.bloodstoneHammer.name=Bloodstone Hammer
+item.FlintChisel.name=Flint Chisel
+item.CopperChisel.name=Copper Chisel
+item.GoldChisel.name=Gold Chisel
+item.DiamondChisel.name=Diamond Chisel
+item.BloodstoneChisel.name=Bloodstone Chisel
+item.reactioncraft.ChainLoop.name=Chain Loop
+item.reactioncraft.bloodstoneclump.name=Bloodstone Clump
+item.reactioncraft.goldrod.name=Gold Rod
+item.reactioncraft.obsidianingot.name=Obsidian Ingot
+item.reactioncraft.ingotbloodstone.name=Bloodstone Ingot
+item.reactioncraft.ingotsilver.name=Silver Ingot
+item.reactioncraft.bloodstonedust.name=Bloodstone Dust
+item.reactioncraft.blackdiamond.name=Black Diamond
+item.reactioncraft.dragonstoneshard.name=Dragonstone Shard
+item.reactioncraft.irondust.name=Iron Dust
+item.reactioncraft.gemdragonstone.name=Dragonstone Gem
+item.reactioncraft.superheatedironingot.name=Ardent Iron
+item.reactioncraft.goldDust.name=Gold Dust
+item.reactioncraft.moltenglass.name=Molten Glass
+item.reactioncraft.IceBucket.name=Ice Bucket
+item.reactioncraft.ObsidianBucket.name=Obsidian Bucket
+item.reactioncraft.Mapinabottle.name=Map In A Bottle
+item.reactioncraft.Shipinabottle.name=Ship In A Bottle
+item.reactioncraft.WoodenBookcasedoor.name=Bookcase Door
+item.reactioncraft.IronBookcasedoor.name=Iron Bookcase Door
+item.reactioncraft.AncientFlower.name=Ancient Flower
+item.reactioncraft.Wrappedcorn.name=Wrapped Corn
+item.reactioncraft.AncientSeeds.name=Ancient Seeds
+item.reactioncraft.sugarcaneItemBase.name=Sugar Cane
+item.reactioncraft.CornSeed.name=Corn Seeds
+item.reactioncraft.Bag.name=Bag
+item.reactioncraft.Sack.name=Sack
+item.reactioncraft.Straw.name=Straw
+item.reactioncraft.CoinMould.name=Coin Mould
+item.reactioncraft.moltengold.name=Molten Gold
+item.reactioncraft.moltensilver.name=Molten Silver
+item.reactioncraft.moltencopper.name=Molten Copper
+item.reactioncraft.moltenbronze.name=Molten Bronze
+item.reactioncraft.copperbucket.name=Copper Bucket
+item.reactioncraft.silverbucket.name=Silver Bucket
+item.reactioncraft.bronzebucket.name=Bronze Bucket
+item.reactioncraft.goldbucket.name=Gold Bucket
+item.reactioncraft.ingotRefinedgold.name=Refined Gold Ingot
+item.reactioncraft.ingotSilver.name=Silver Ingot
+item.reactioncraft.ingotBronze.name=Bronze Ingot
+item.reactioncraft.ingotCopper.name=Copper Ingot
+item.reactioncraft.ingotmould.name=Ingot Mould
+item.reactioncraft.ruby.name=Ruby
+item.reactioncraft.Crown.name=Crown
+item.reactioncraft.KinglyChest.name=Kingly Chest
+item.reactioncraft.KinglyLegs.name=Kingly Legs
+item.reactioncraft.KinglyBoots.name=Kingly Boots
+item.reactioncraft.emeraldcrown.name=Emerald Crown
+item.reactioncraft.diamondcrown.name=Diamond Crown
+item.reactioncraft.rubycrown.name=Ruby Crown
+item.reactioncraft.bloodstonehelm.name=Bloodstone Helm
+item.reactioncraft.bloodstonechest.name=Bloodstone Chest
+item.reactioncraft.bloodstonelegs.name=Bloodstone Legs
+item.reactioncraft.bloodstoneboots.name=Bloodstone Boots
+item.reactioncraft.Bat.name=Bat
+item.ObbySword.name=Obsidian Sword
+item.ObbyPick.name=Obsidian Pickaxe
+item.ObbyShovel.name=Obsidian Shovel
+item.ObbyAxe.name=Obsidian Axe
+item.ObbyHoe.name=Obsidian Hoe
+item.BloodstoneSword.name=Bloodstone Sword
+item.BloodstonePick.name=Bloodstone Pickaxe
+item.BloodstoneShovel.name=Bloodstone Shovel
+item.BloodstoneAxe.name=Bloodstone Axe
+item.BloodstoneHoe.name=Bloodstone Hoe
+item.BloodstoneDiamondPick.name=Black Diamond Pickaxe
+item.reactioncraft.BloodstoneBlade.name=Bloodstone Blade
+item.reactioncraft.GoldenSwordFragment.name=Golden Sword Fragment
+item.reactioncraft.UnbindedSword.name=Unbound Sword
+item.reactioncraft.meltedventinite.name=Melted Ventinite
+item.reactioncraft.meltedwizimite.name=Melted Wizimite
+item.reactioncraft.scoop.name=Scoop
+item.reactioncraft.bloodstoneframe.name=Bloodstone Frame
+item.reactioncraft.honeycomb.name=Honeycomb
+item.reactioncraft.pollencomb.name=Pollencomb
+item.reactioncraft.Blackdiamondbore.name=Black Diamond Bore
+item.reactioncraft.Bloodstonebore.name=Bloodstone Bore
