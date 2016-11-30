@@ -2,7 +2,7 @@ package com.reactioncraft.food.common;
 
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 import com.reactioncraft.core.common.items.ItemBaseSword;
 
 import net.minecraft.entity.Entity;

@@ -2,9 +2,7 @@ package com.reactioncraft.bookcase.common;
 
 import com.reactioncraft.reactioncraft;
 
-import net.minecraft.block.material.MapColor;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.text.TextFormatting;
 

@@ -1,30 +1,25 @@
 package com.reactioncraft.bookcase.common;
 
+//Reactioncraft
+import com.reactioncraft.reactioncraft;
+import com.reactioncraft.core.common.blocks.*;
+import com.reactioncraft.integration.instances.*;
+
+//Minecraft
+import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Random;
-
-import javax.annotation.Nullable;
-
-import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.common.blocks.BlockBase;
-import com.reactioncraft.desert.common.EnumDesertBlocks;
-import com.reactioncraft.desert.common.EnumHireoGlyphs;
-import com.reactioncraft.integration.instances.IntegratedBlocks;
-
-import net.minecraft.block.BlockSilverfish;
-import net.minecraft.block.BlockStairs;
+import net.minecraft.block.*;
 import net.minecraft.block.material.*;
 import net.minecraft.block.properties.*;
 import net.minecraft.block.state.*;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.creativetab.*;
+import net.minecraft.entity.player.*;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.*;
 import net.minecraft.stats.StatList;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.*;
@@ -86,63 +81,70 @@ public class BlockBookcaseMulti extends BlockBase
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, @Nullable ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ)
 	{
-		ItemStack stacktosubtract = new ItemStack(Items.BOOK);
-		ItemStack stacktoadd = new ItemStack(Items.BOOK);
-		
-		IBlockState iblockstate2 = IntegratedBlocks.bookcases.getDefaultState().withProperty(BlockBookcaseMulti.TYPE, EnumBookshelf.one1);
-		
-		//Change from empty to partially filled
-		if (state.getBlock() == iblockstate2)
+		ItemStack stack = playerIn.getHeldItem(hand);
+		ItemStack stacktoAdd = new ItemStack(Items.BOOK);
+
+		final IBlockState set0 = IntegratedBlocks.bookcases.getDefaultState().withProperty(BlockBookcaseMulti.TYPE, EnumBookshelf.one1);  // Empty
+		final IBlockState set1 = IntegratedBlocks.bookcases.getDefaultState().withProperty(BlockBookcaseMulti.TYPE, EnumBookshelf.two2);  // 1/3 full
+		final IBlockState set2 = IntegratedBlocks.bookcases.getDefaultState().withProperty(BlockBookcaseMulti.TYPE, EnumBookshelf.two3);  // 2/3 full
+		final IBlockState set3 = IntegratedBlocks.bookcases.getDefaultState().withProperty(BlockBookcaseMulti.TYPE, EnumBookshelf.three1);// full
+
+
+		if(stack != null && playerIn.getHeldItemMainhand().getItem() == Items.BOOK)
 		{
-			if(playerIn.getHeldItemMainhand() == stacktosubtract)
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.one1)
 			{
 				System.out.println("changed into 1");
-				worldIn.setBlockState(pos, iblockstate2);
-				--stacktosubtract.stackSize;
+				worldIn.setBlockState(pos, set1);
+				--stack.stackSize;
 				return true;
 			}
-			else 
-			{
-				return false;
-			}
-		}
-
-		//Change from 1/3 to 2/3 filled
-		//if (IntegratedBlocks.bookcases.getDefaultState().getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two2)
-		if (((IBlockState) IntegratedBlocks.bookcases.getBlockState()).getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two2)
-		{
-			if(playerIn.getHeldItemMainhand() == stacktosubtract)
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two2)
 			{
 				System.out.println("changed into 2");
-				worldIn.setBlockState(pos, this.blockState.getBaseState().withProperty(TYPE, EnumBookshelf.two3));
-				--stacktosubtract.stackSize;
+				worldIn.setBlockState(pos, set2);
+				--stack.stackSize;
 				return true;
 			}
-			else 
-			{
-				return false;
-			}
-		}
-
-		//Change from 2/3 to filled
-		if (IntegratedBlocks.bookcases.getDefaultState().getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two3)
-		{
-			if(heldItem.getItem() == Items.BOOK)
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two3)
 			{
 				System.out.println("changed into 3");
-				worldIn.setBlockState(pos, this.blockState.getBaseState().withProperty(TYPE, EnumBookshelf.three1));
-				--stacktosubtract.stackSize;
+				worldIn.setBlockState(pos, set3);
+				--stack.stackSize;
 				return true;
 			}
-			else 
+			else
 			{
 				return false;
 			}
 		}
-		
 		else
 		{
-			return false;
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.three1)
+			{
+				System.out.println("changed back into 2");
+				worldIn.setBlockState(pos, set2);
+				playerIn.inventory.addItemStackToInventory(stacktoAdd);
+				return true;
+			}
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two3)
+			{
+				System.out.println("changed back into 2");
+				worldIn.setBlockState(pos, set1);
+				playerIn.inventory.addItemStackToInventory(stacktoAdd);
+				return true;
+			}
+			if (state.getValue(BlockBookcaseMulti.TYPE) == EnumBookshelf.two2)
+			{
+				System.out.println("changed back into 1");
+				worldIn.setBlockState(pos, set0);
+				playerIn.inventory.addItemStackToInventory(stacktoAdd);
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 	}
 }

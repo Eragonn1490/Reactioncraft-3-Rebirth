@@ -1,7 +1,7 @@
 package com.reactioncraft.core.common.items;
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 
 import net.minecraft.item.ItemHoe;
 import net.minecraft.util.ResourceLocation;

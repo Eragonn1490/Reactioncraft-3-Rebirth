@@ -26,6 +26,7 @@ public class ExclusionList implements Iterable<String>
         this.addExclusion("MinecartTNT");
         this.addExclusion("WitherSkull");
         this.addExclusion("Hydrolisc");
+        //To Add custom Exclusions to the mods
     }
 
     public void addExclusion(String name)

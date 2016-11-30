@@ -36,6 +36,19 @@ public class IntegratedRecipesRegistry
 		}
 		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.complete_net), new Object[] {IntegratedItems.hilt, IntegratedItems.net});
 	}
+	
+	public static void mobsRecipesInit()
+	{
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.DYE, 2, 15), new Object[] {Boolean.valueOf(true), new Object[]{"Y", 'Y', "bones"}}));
+	}
+	
+	public static void loadRecipesforVanilla()
+	{
+		GameRegistry.addSmelting(IntegratedItems.IceBucket, new ItemStack(Items.WATER_BUCKET, 1), 0.5F);
+	}
+	
+	
+	//Not Fixed Below
 
 	public static void machinerecipiesInit() 
 	{
@@ -45,11 +58,6 @@ public class IntegratedRecipesRegistry
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.ICE, 1), new Object[] {IntegratedItems.IceBucket});
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.OBSIDIAN, 1), new Object[] {IntegratedItems.ObsidianBucket});
 		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.irondust, 1), new Object[] {IntegratedItems.ironShavings, IntegratedItems.ironShavings, IntegratedItems.ironShavings, IntegratedItems.ironShavings});
-	}
-
-	public static void mobsRecipesInit()
-	{
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(Items.DYE, 2, 15), new Object[] {Boolean.valueOf(true), new Object[]{"Y", 'Y', "bones"}}));
 	}
 
 	public static void glassRecipesInit()
@@ -71,11 +79,6 @@ public class IntegratedRecipesRegistry
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.GlowingGlass, 1, 11), new Object[] {"dyeMagenta", IntegratedItems.moltenglass, Items.GLOWSTONE_DUST}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.GlowingGlass, 1, 12), new Object[] {"dyeOrange", IntegratedItems.moltenglass, Items.GLOWSTONE_DUST}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.GlowingGlass, 1, 15), new Object[] {"dyeWhite", IntegratedItems.moltenglass, Items.GLOWSTONE_DUST}));
-	}
-
-	public static void loadRecipesforVanilla()
-	{
-		GameRegistry.addSmelting(IntegratedItems.IceBucket, new ItemStack(Items.WATER_BUCKET, 1), 0.5F);
 	}
 	
 	public static void loadWeapons()

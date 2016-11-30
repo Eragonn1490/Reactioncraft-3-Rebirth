@@ -1,7 +1,7 @@
 package com.reactioncraft.currency.common;
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 import com.reactioncraft.integration.instances.IntegratedItems;
 
 import net.minecraft.entity.Entity;

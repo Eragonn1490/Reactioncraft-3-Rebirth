@@ -29,26 +29,6 @@ public class EventContainerClass
 	//		e.getEntityPlayer().hasAchievement(AchievementList.MINE_WOOD);
 	//	}
 	//}
-	
-	@SubscribeEvent
-    public void populateChunk(PopulateChunkEvent.Pre event) 
-	{
-		System.out.println("this triggered");
-            Chunk chunk = event.getWorld().getChunkFromChunkCoords(event.getChunkX(), event.getChunkZ());
-            for (ExtendedBlockStorage storage : chunk.getBlockStorageArray()) {
-                    if (storage != null) {
-                            for (int x = 0; x < 16; ++x) {
-                                    for (int y = 0; y < 16; ++y) {
-                                            for (int z = 0; z < 16; ++z) {
-                                                    if (storage.get(x, y, z) == Blocks.STONE) {
-                                                            storage.set(x, y, z, IntegratedBlocks.DesertBlocks.getDefaultState());
-                                                    }
-                                            }
-                                    }
-                            }
-                    }
-            }
-    }
 
 	@SubscribeEvent
 	public void onEntityDrop(LivingDropsEvent event)

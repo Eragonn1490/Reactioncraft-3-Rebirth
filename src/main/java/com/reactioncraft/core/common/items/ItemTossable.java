@@ -1,7 +1,7 @@
 package com.reactioncraft.core.common.items;
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 import com.reactioncraft.core.common.entity.EntityMap;
 import com.reactioncraft.integration.instances.IntegratedItems;
 

@@ -1,17 +1,16 @@
 package com.reactioncraft;
 
-
-import com.reactioncraft.api.ExclusionList;
-import com.reactioncraft.core.ClientProxy;
 //Reactioncraft Imports
-import com.reactioncraft.core.CommonProxy;
-import com.reactioncraft.core.common.RecipesManager;
+import com.reactioncraft.api.*;
+import com.reactioncraft.core.*;
+import com.reactioncraft.core.common.*;
 //import com.reactioncraft.core.Remapper;
-import com.reactioncraft.core.common.biomes.ReactionBiomeManager;
+import com.reactioncraft.core.common.biomes.*;
 import com.reactioncraft.core.common.creativeTab.*;
-import com.reactioncraft.core.common.tileEntities.TileEntityRegistry;
-import com.reactioncraft.core.common.world.WorldGenManager;
+import com.reactioncraft.core.common.tileEntities.*;
+import com.reactioncraft.core.common.world.*;
 import com.reactioncraft.integration.*;
+//Minecraft Imports
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
@@ -56,7 +55,7 @@ public class reactioncraft
         IntegratedMaterials.initMaterials();
         IntegratedBlocksRegistry.init();
         IntegratedItemRegistry.init();
-        ReactionBiomeManager.registerBiomes();
+        ReactionBiomeManager.registerBiomes();//Methods will be updated with new version of forge
         WorldGenManager.registerOreInit();
         TileEntityRegistry.registerTileEntities();
         IntegratedOreDictionaryFile.loadAll();//Loads Ore Dictionary Registration , needs to be update to 1.10.2
@@ -65,14 +64,14 @@ public class reactioncraft
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	IntegratedEventRegistry.eventInit();//move me
-    	RecipesManager.registerRecipes();
+    	IntegratedEventRegistry.eventInit();
+    	RecipesManager.registerRecipes();//Needs to be fixed for 1.10.2
     }
     
     @Mod.EventHandler
     public void modsLoaded(FMLPostInitializationEvent evt)
     {
-    	FMLLog.info("Looks like Reactioncraft Has Fully Loaded!", new Object[0]);
+    	FMLLog.info("[REACTIONCRAFT] Has Fully Loaded!", new Object[0]);
     }
     
     @EventHandler

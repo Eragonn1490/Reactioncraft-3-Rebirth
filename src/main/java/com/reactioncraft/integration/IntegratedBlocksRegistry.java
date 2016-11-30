@@ -2,8 +2,8 @@ package com.reactioncraft.integration;
 
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.Generator;
-import com.reactioncraft.core.common.ItemMulti;
 import com.reactioncraft.core.common.blocks.*;
+import com.reactioncraft.core.common.items.ItemMulti;
 import com.reactioncraft.integration.instances.IntegratedBlocks;
 import com.reactioncraft.machines.common.*;
 import com.reactioncraft.desert.common.*;
@@ -29,7 +29,7 @@ public class IntegratedBlocksRegistry
 		//Turn Desert Plants Into Metadata Blocks ^^
 
 		//Sand Blocks
-		IntegratedBlocks.DarkSand     = (BlockBaseSand) register(new BlockBaseSand(Material.SAND, "sands")).setCreativeTab(reactioncraft.Reactioncraft);
+		IntegratedBlocks.DarkSand     = (BlockBaseSand) register(new BlockBaseSand(Material.SAND, "sands")).setHardness(0.5F).setCreativeTab(reactioncraft.Reactioncraft);
 		
 		//Desert Blocks
 		IntegratedBlocks.DesertBlocks     = (BlockDesertMulti) register(new BlockDesertMulti("desertblocks", Material.ROCK)).setHardness(0.3F);

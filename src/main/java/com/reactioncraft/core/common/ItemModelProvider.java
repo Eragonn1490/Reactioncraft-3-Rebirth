@@ -1,4 +1,4 @@
-package com.reactioncraft.core;
+package com.reactioncraft.core.common;
 
 public interface ItemModelProvider 
 {

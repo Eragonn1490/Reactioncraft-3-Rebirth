@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 import com.google.common.collect.ImmutableSet;
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 import com.reactioncraft.integration.instances.IntegratedItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;

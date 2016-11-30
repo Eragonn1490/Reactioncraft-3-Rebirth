@@ -1,7 +1,7 @@
 package com.reactioncraft.desert.common;
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.core.ItemModelProvider;
+import com.reactioncraft.core.common.ItemModelProvider;
 import com.reactioncraft.core.common.items.ItemBaseChisel;
 
 import net.minecraft.util.ResourceLocation;

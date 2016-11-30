@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.*;
+import com.reactioncraft.core.common.items.ItemMulti;
 import com.reactioncraft.core.common.tileEntities.*;
 import com.reactioncraft.desert.common.*;
 import com.reactioncraft.integration.instances.IntegratedBlocks;

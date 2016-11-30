@@ -5,6 +5,8 @@ Machine Blocks need to be rewrote to use one block instead of two, they need to 
 
 Desert Blocks: 
 Change bounding boxes of column blocks
+Custom sand wont allow doors to be placed on it
+
 
 Guis: 
 crash when making items? and blocks dont show up in inventory
