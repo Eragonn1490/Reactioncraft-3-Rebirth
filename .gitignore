@@ -1,0 +1,30 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+.eclipse
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+gradle
+
+# forge
+CREDITS-fml
+gradlew
+LICENSE-new
+MinecraftForge-Credits
+Paulscode SoundSystem CodecIBXM License
+
+# other
+run

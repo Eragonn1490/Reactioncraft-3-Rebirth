@@ -1,0 +1,90 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "cube_all"
+    },
+    "variants": {
+        "type": {
+            "one1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/BrownSymbol1"
+                }
+            },
+            "one2": {
+                "textures": {
+                    "all": "reactioncraft:blocks/BrownSymbol2"
+                }
+            },
+             "one3": {
+                "textures": {
+                    "all": "reactioncraft:blocks/BrownSymbol3"
+                }
+            },
+             "two1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/darkbluesymbol1"
+                }
+            },
+             "two2": {
+                "textures": {
+                    "all": "reactioncraft:blocks/darkbluesymbol2"
+                }
+            },
+             "two3": {
+                "textures": {
+                    "all": "reactioncraft:blocks/darkbluesymbol3"
+                }
+            },
+             "three1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/lightbluesymbol1"
+                }
+            },
+             "three2": {
+                "textures": {
+                    "all": "reactioncraft:blocks/lightbluesymbol2"
+                }
+            },
+             "three3": {
+                "textures": {
+                    "all": "reactioncraft:blocks/lightbluesymbol3"
+                }
+            },
+             "four1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols1"
+                }
+            },
+             "four2": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols2"
+                }
+            },
+            "four3": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols3"
+                }
+            },
+            "five1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols3"
+                }
+            },
+            "five2": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols3"
+                }
+            },
+            "five3": {
+                "textures": {
+                    "all": "reactioncraft:blocks/GoldSymbols3"
+                }
+            },
+            "six1": {
+                "textures": {
+                    "all": "reactioncraft:blocks/weathered"
+                }
+            }
+        }
+    }
+}

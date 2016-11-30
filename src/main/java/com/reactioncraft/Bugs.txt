@@ -1,0 +1,10 @@
+Bugs:
+
+Machines:
+Machine Blocks need to be rewrote to use one block instead of two, they need to be updated to use correct textures
+
+Desert Blocks: 
+Change bounding boxes of column blocks
+
+Guis: 
+crash when making items? and blocks dont show up in inventory
