@@ -6,12 +6,10 @@ Added Glowing Stained Glass
 Added Hireoglyphics
 Added Bone Drops for most mobs
 Added Foods
-Added More Bookcases & Shelves (Add Books / Scrolls to change texture , right click with empty hand to recover book)
+Added Requested Feature: More Bookcases & Shelves (Add Books / Scrolls to change texture, right click with empty hand to recover book)
+Changed Recipe for making Edible Flesh.
+Reaction Desert Biome: No longer has stone under it. 
 
-Todo:
-Re-add Mobs
-Fix Recipes
-Add Names
 
 Old Features:
-Same from 1.6.4 Last Released Version
+Same from 1.6.4 Last Released Version (with changes for 1.10.x and things to come back during the next few updates)

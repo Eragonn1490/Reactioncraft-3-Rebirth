@@ -20,8 +20,8 @@ import com.reactioncraft.ore.common.EnumSores;
 
 public class worldgen implements IWorldGenerator 
 {
-	private static final IBlockState Ore = IntegratedBlocks.surfaceOres.getDefaultState().withProperty(BlockSOMulti.TYPE, EnumSores.one1);
-	private static final IBlockState Ore1 = IntegratedBlocks.surfaceOres.getDefaultState().withProperty(BlockSOMulti.TYPE, EnumSores.one2);
+	private static final IBlockState Ore = IntegratedBlocks.surfaceOres.getDefaultState().withProperty(BlockSOMulti.TYPE,  EnumSores.two2);//Silver 
+	private static final IBlockState Ore1 = IntegratedBlocks.surfaceOres.getDefaultState().withProperty(BlockSOMulti.TYPE, EnumSores.two3);//Ventinite
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
@@ -36,7 +36,8 @@ public class worldgen implements IWorldGenerator
 		generateOre(Ore1, world, random, chunkX * 16, chunkZ * 16, 16, 64, 4 + random.nextInt(4), 6);
 	}
 
-	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) {
+	private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances) 
+	{
 		int deltaY = maxY - minY;
 
 		for (int i = 0; i < chances; i++) 

@@ -1,4 +1,4 @@
-package com.reactioncraft.integration;
+package com.reactioncraft.api;
 
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.integration.instances.*;
@@ -6,7 +6,7 @@ import com.reactioncraft.integration.instances.*;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class IntegratedOreDictionaryFile
+public class OreDictionaryRegistry
 {
     public static void loadAll()
     {

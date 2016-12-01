@@ -1,5 +1,8 @@
 Bugs:
 
+Bookcases:
+make it so that Empty Bookcases no longer add enchantment strength to enchantment table (re-add enchantment bonus i removed)
+
 Machines:
 Machine Blocks need to be rewrote to use one block instead of two, they need to be updated to use correct textures
 

@@ -1,12 +1,8 @@
 package com.reactioncraft.core.common.craftinghandlers;
 
 import java.util.Random;
-
 import com.reactioncraft.integration.instances.*;
-
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.entity.player.*;
 import net.minecraft.init.*;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.common.eventhandler.*;

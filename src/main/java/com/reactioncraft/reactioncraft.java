@@ -25,7 +25,7 @@ public class reactioncraft
 {
 	public static final String name = "Reactioncraft 3: Rebirth";
     public static final String MODID = "reactioncraft";
-    public static final String version = "1.0.0";
+    public static final String version = "Alpha-1.0.0";
     
     //Proxies
     @SidedProxy(serverSide = "com.reactioncraft.core.CommonProxy", clientSide = "com.reactioncraft.core.ClientProxy")
@@ -58,7 +58,8 @@ public class reactioncraft
         ReactionBiomeManager.registerBiomes();//Methods will be updated with new version of forge
         WorldGenManager.registerOreInit();
         TileEntityRegistry.registerTileEntities();
-        IntegratedOreDictionaryFile.loadAll();//Loads Ore Dictionary Registration , needs to be update to 1.10.2
+        OreDictionaryRegistry.loadAll();//Loads Ore Dictionary Registration , needs to be update to 1.10.2
+        IntegratedBlockOverrides.loadAll();
     }
     
     @Mod.EventHandler

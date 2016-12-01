@@ -11,13 +11,14 @@ public class RecipesManager
     	IntegratedRecipesRegistry.glassRecipesInit();
     	IntegratedRecipesRegistry.mobsRecipesInit();
     	IntegratedRecipesRegistry.loadRecipesforVanilla();
-    	IntegratedRecipesRegistry.loadWeapons();
-    	IntegratedRecipesRegistry.loadFood();
+    	IntegratedRecipesRegistry.weaponsRecipesInit();
+    	IntegratedRecipesRegistry.foodRecipesInit();
     	IntegratedRecipesRegistry.loadDesertRecipes();
     	IntegratedRecipesRegistry.loadPlants();
     	IntegratedRecipesRegistry.loadORES();
     	IntegratedRecipesRegistry.loadCurrency();
     	IntegratedRecipesRegistry.loadBookcases();
     	IntegratedRecipesRegistry.loadCore();
+    	IntegratedRecipesRegistry.miscRecipesInit();
 	}
 }

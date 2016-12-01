@@ -2,8 +2,7 @@ package com.reactioncraft.core.common.items;
 
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.ItemModelProvider;
-
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 
 public class ItemBaseSpade extends ItemSpade implements ItemModelProvider

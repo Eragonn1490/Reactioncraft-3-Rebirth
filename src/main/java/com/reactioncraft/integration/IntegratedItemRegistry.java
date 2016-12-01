@@ -135,11 +135,11 @@ public class IntegratedItemRegistry
         IntegratedItems.Bag               = register(new ItemBase("Bag")             .setCreativeTab(reactioncraft.ReactioncraftItems));
         IntegratedItems.Sack              = register(new ItemBase("Sack")            .setCreativeTab(reactioncraft.ReactioncraftItems));
         IntegratedItems.Straw             = register(new ItemBase("Straw")           .setCreativeTab(reactioncraft.ReactioncraftItems));
-        IntegratedItems.CoinMould         = (ItemBase) register(new ItemBase("CoinMould")   .setMaxDamage(15)  .setCreativeTab(reactioncraft.ReactioncraftItems));
-        IntegratedItems.moltengold        = register(new ItemBase("moltengold")      .setCreativeTab(reactioncraft.ReactioncraftItems));
-        IntegratedItems.moltensilver      = register(new ItemBase("moltensilver")    .setCreativeTab(reactioncraft.ReactioncraftItems));
-        IntegratedItems.moltencopper      = register(new ItemBase("moltencopper")    .setCreativeTab(reactioncraft.ReactioncraftItems));
-        IntegratedItems.moltenbronze      = register(new ItemBase("moltenbronze")    .setCreativeTab(reactioncraft.ReactioncraftItems));
+        IntegratedItems.CoinMould         = (ItemBase) register(new ItemBase("CoinMould")       .setMaxDamage(15)  .setCreativeTab(reactioncraft.ReactioncraftItems));
+        IntegratedItems.moltengold        = (ItemBase) register(new ItemBase("moltengold")      .setContainerItem(Items.BUCKET) .setCreativeTab(reactioncraft.ReactioncraftItems));
+        IntegratedItems.moltensilver      = (ItemBase) register(new ItemBase("moltensilver")    .setContainerItem(Items.BUCKET) .setCreativeTab(reactioncraft.ReactioncraftItems));
+        IntegratedItems.moltencopper      = (ItemBase) register(new ItemBase("moltencopper")    .setContainerItem(Items.BUCKET) .setCreativeTab(reactioncraft.ReactioncraftItems));
+        IntegratedItems.moltenbronze      = (ItemBase) register(new ItemBase("moltenbronze")    .setContainerItem(Items.BUCKET) .setCreativeTab(reactioncraft.ReactioncraftItems));
         IntegratedItems.copperbucket      = register(new ItemBase("copperbucket")    .setCreativeTab(reactioncraft.ReactioncraftItems));
         IntegratedItems.silverbucket      = register(new ItemBase("silverbucket")    .setCreativeTab(reactioncraft.ReactioncraftItems));
         IntegratedItems.bronzebucket      = register(new ItemBase("bronzebucket")    .setCreativeTab(reactioncraft.ReactioncraftItems));

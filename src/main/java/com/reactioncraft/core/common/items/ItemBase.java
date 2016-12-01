@@ -2,7 +2,6 @@ package com.reactioncraft.core.common.items;
 
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.ItemModelProvider;
-
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;

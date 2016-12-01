@@ -1,19 +1,14 @@
 package com.reactioncraft.core.common.items;
 
 import java.util.Set;
-
 import com.google.common.collect.Sets;
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.ItemModelProvider;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemAxe;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
+import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 
 public class ItemBaseAxe extends ItemTool implements ItemModelProvider

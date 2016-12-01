@@ -1,10 +1,8 @@
 package com.reactioncraft.core.common.events;
 
-import com.reactioncraft.integration.instances.IntegratedBlocks;
-import com.reactioncraft.integration.instances.IntegratedItems;
-
-import net.minecraft.block.Block;
-import net.minecraft.entity.item.EntityItem;
+import com.reactioncraft.integration.instances.*;
+import net.minecraft.block.*;
+import net.minecraft.entity.item.*;
 import net.minecraft.entity.monster.*;
 import net.minecraft.entity.passive.*;
 import net.minecraft.entity.player.EntityPlayer;
@@ -14,8 +12,7 @@ import net.minecraft.world.chunk.storage.ExtendedBlockStorage;
 import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.*;
 
 public class EventContainerClass
 {

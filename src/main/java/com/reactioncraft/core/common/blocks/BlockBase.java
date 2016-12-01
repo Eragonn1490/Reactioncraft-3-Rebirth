@@ -1,14 +1,11 @@
 package com.reactioncraft.core.common.blocks;
 
 import com.reactioncraft.reactioncraft;
-import com.reactioncraft.integration.instances.IntegratedBlocks;
-import com.reactioncraft.integration.instances.IntegratedItems;
-
+import com.reactioncraft.integration.instances.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.item.*;
 
 public class BlockBase extends Block 
 {

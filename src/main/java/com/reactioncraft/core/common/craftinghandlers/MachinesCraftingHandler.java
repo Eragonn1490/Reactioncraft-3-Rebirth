@@ -1,7 +1,6 @@
 package com.reactioncraft.core.common.craftinghandlers;
 
 import com.reactioncraft.integration.instances.IntegratedItems;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;

@@ -4,11 +4,8 @@ import java.util.List;
 
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.ItemModelProvider;
-
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
