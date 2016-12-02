@@ -124,6 +124,10 @@ public class IntegratedRecipesRegistry
 		GameRegistry.addSmelting(IntegratedBlocks.DarkSand, new ItemStack(Blocks.GLASS, 1, 0), 0.5F);
 		GameRegistry.addSmelting(IntegratedItems.goldrod, new ItemStack(Items.GOLD_INGOT, 2, 0), 0.5F);
 		
+		//Gold Rod Recipes
+		GameRegistry.addRecipe(new ItemStack(IntegratedItems.goldrod, 1, 0), new Object[] {"D", "S", "D", 'S', Items.STICK, 'D', Items.GOLD_INGOT});//Top Down
+		GameRegistry.addRecipe(new ItemStack(IntegratedItems.goldrod, 1, 0), new Object[] {"DSD", 'S', Items.STICK, 'D', Items.GOLD_INGOT});//Left to right
+		
 		//Find Suitable Place for this.
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.bloodstonebricks, 4, 0), new Object[] {"oreBloodstone", "oreBloodstone", "oreBloodstone", "oreBloodstone"}));
 	}
@@ -151,18 +155,70 @@ public class IntegratedRecipesRegistry
 		
 		//Making Dark Stone (My Recipe and Redundant oreDictionary Version for mod Support
 		GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {"GG", "GG", 'G', IntegratedItems.SandStonePaste});
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), new Object[] {"darkclay", "darkclay", "darkclay", "darkclay"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {"darkclay", "darkclay", "darkclay", "darkclay"}));
+		GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 4, 0), new Object[] {"XYX", "YXY", "XYX", 'Y', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 6), 'X', new ItemStack(IntegratedItems.SandStonePaste)});//Darkstone Bricks
 		
 		//Gem Carving
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedItems.CutLBGem, 1, 0), new Object[] {IntegratedItems.UncutLBGem, "chisel"}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedItems.CutDBGem, 1, 0), new Object[] {IntegratedItems.UncutDBGem, "chisel"}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedItems.gemdragonstone, 1, 0), new Object[] {new ItemStack(IntegratedItems.dragonstoneshard, 1, 0), "chisel"}));
+		
+		//Darkstone Recipes
+		GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 4, 6), new Object[] {"XX", "XX", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7)});//Darkstone Brick
+		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 1), "chisel"}));//Back To regular darkstone
+		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 4), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 6), "chisel"}));//Cracked Darkstone Bricks to regular
+		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), "chisel"}));//stone to carved stone
+		
+		//Hireoglyphics
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 0), new Object[]  {"YYY", " X ", 'X',        new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 1), new Object[]  {"YYY", "YX ", 'X',        new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 2), new Object[]  {"YYY", "YXY", 'X',        new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), 'Y', "chisel"}));
+		
+		//Light Blue
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 6), new Object[]  {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 7), new Object[]  {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 8), new Object[]  {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
+		
+		//Dark Blue Hireoglyphics
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 3), new Object[]  {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 4), new Object[]  {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 5), new Object[]  {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
+		
+		//Gold Hireoglyphics
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 9), new Object[]  {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 10), new Object[] {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 11), new Object[] {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
+		
+		//Weathered Hireoglyphics to darkstone or state 0 hireoglyph
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 0), new Object[]   {"YYY", "YX ", 'X',        new ItemStack(IntegratedBlocks.DesertBlocks, 1, 12), 'Y', "chisel"}));
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {"YYY", " X ", 'X',        new ItemStack(IntegratedBlocks.DesertBlocks, 1, 12), 'Y', "chisel"}));
+		
+		//Quartz to carved quartz
+		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 8), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 3), "chisel"}));
 	}
 	
 	public static void currencyRecipesInit()
 	{
 		//Bucket with ingot's
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.goldbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotGold"}}));
+	
+		GameRegistry.addSmelting(IntegratedItems.Crown,        new ItemStack(IntegratedItems.ingotRefinedgold, 3, 0), 0.5F);//MELTING CROWN
+		GameRegistry.addSmelting(IntegratedItems.goldbucket,   new ItemStack(IntegratedItems.moltengold, 1, 0)      , 0.5F);
+		GameRegistry.addSmelting(IntegratedItems.silverbucket, new ItemStack(IntegratedItems.moltensilver, 1, 0)    , 0.5F);
+		GameRegistry.addSmelting(IntegratedItems.bronzebucket, new ItemStack(IntegratedItems.moltenbronze, 1, 0)    , 0.5F);
+		GameRegistry.addSmelting(IntegratedItems.copperbucket, new ItemStack(IntegratedItems.moltencopper, 1, 0)    , 0.5F);
+		
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.goldbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotGold"}})); //Putting ingot into bucket
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotRefinedgold, 1), new Object[] {IntegratedItems.goldbucket});
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotRefinedgold, 1), new Object[] {IntegratedItems.moltengold, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.silverbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotSilver"}}));//Putting ingot into bucket
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotSilver, 1), new Object[] {IntegratedItems.silverbucket});
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotSilver, 1), new Object[] {IntegratedItems.moltensilver, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.bronzebucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotBronze"}}));//Putting ingot into bucket
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotBronze, 1), new Object[] {IntegratedItems.bronzebucket});
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotBronze, 1), new Object[] {IntegratedItems.moltenbronze, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
+		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.copperbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotCopper"}}));//Putting ingot into bucket
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotCopper, 1), new Object[] {IntegratedItems.copperbucket});
+		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotCopper, 1), new Object[] {IntegratedItems.moltencopper, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
 	}
 	public static void bookCasesInit()
 	{
@@ -196,14 +252,9 @@ public class IntegratedRecipesRegistry
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.CherryPlanks, 4, 0), new Object[] {"CherryWood"}));
 		GameRegistry.addSmelting(IntegratedBlocks.Cherrywood, new ItemStack(Items.COAL, 1, 1), 0.5F);
 		
+
+//		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 6), "chisel"}));
 		
-		GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 3), new Object[] {"XX", "XX", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0)});
-	
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), new Object[] {new ItemStack(IntegratedBlocks.hireoglyph, 1, 11), "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 3), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 4), "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 6), "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 2), "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), new Object[] {new ItemStack(IntegratedBlocks.DesertBlocks, 1, 1), "chisel"}));
 //		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti, 1, 9), new Object[] {"X  ", "XY ", "X  ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), 'Y', "chisel"}));
 //		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti, 1, 0), new Object[] {"X  ", "XY ", "X  ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 3), 'Y', "chisel"}));
 //		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti, 1, 3), new Object[] {"X  ", "XY ", "X  ", 'X', Blocks.STONE, 'Y', "chisel"}));
@@ -222,18 +273,6 @@ public class IntegratedRecipesRegistry
 //		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti2, 1, 7), new Object[] {new ItemStack(IntegratedBlocks.ColumnMulti, 1, 7), "chisel"}));
 //		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti2, 1, 8), new Object[] {new ItemStack(IntegratedBlocks.ColumnMulti, 1, 8), "chisel"}));
 //		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedBlocks.ColumnMulti2, 1, 2), new Object[] {new ItemStack(IntegratedBlocks.ColumnMulti, 1, 2), "chisel2"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 0), new Object[] {"YYY", " X ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 1), new Object[] {"YYY", "YX ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 2), new Object[] {"YYY", "YXY", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 3), new Object[] {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 4), new Object[] {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 5), new Object[] {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutLBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 6), new Object[] {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 7), new Object[] {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 8), new Object[] {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', IntegratedItems.CutDBGem, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 13), new Object[] {"YYY", " X ", " @ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 14), new Object[] {"YYY", "YX ", "Y@ ", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedBlocks.hireoglyph, 1, 15), new Object[] {"YYY", "YXY", "Y@Y", 'X', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 0), '@', Items.GOLD_INGOT, 'Y', "chisel"}));
 	}
 
 	public static void loadORES()
@@ -249,8 +288,7 @@ public class IntegratedRecipesRegistry
 		//FurnaceRecipes.smelting().addSmelting(IntegratedBlocks.netherOres.blockID, 4, new ItemStack(Item.ingotGold.itemID, 1, 0), 0.5F);
 		GameRegistry.addSmelting(IntegratedItems.irondust, new ItemStack(IntegratedItems.superheatedironingot, 2, 0), 0.5F);
 		GameRegistry.addSmelting(IntegratedItems.goldDust, new ItemStack(Items.GOLD_INGOT, 1, 0), 0.1F);
-		GameRegistry.addRecipe(new ItemStack(IntegratedItems.goldrod, 1, 0), new Object[] {"D", "S", "D", 'S', Items.STICK, 'D', Items.GOLD_INGOT});
-		GameRegistry.addRecipe(new ItemStack(IntegratedItems.goldrod, 1, 0), new Object[] {"DSD", 'S', Items.STICK, 'D', Items.GOLD_INGOT});
+		
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedItems.goldDust, 1, 0), new Object[] {"oreNetherGoldOre", "hammer1"}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(IntegratedItems.blackdiamond, 1, 0), new Object[] {"oreNetherBlackDiamond", "hammer1"}));
 		CraftingManager.getInstance().getRecipeList().add(new ShapelessOreRecipe(new ItemStack(Items.DIAMOND, 1, 0), new Object[] {"oreNetherDiamondOre", "hammer1"}));
@@ -260,12 +298,6 @@ public class IntegratedRecipesRegistry
 	public static void loadCurrency()
 	{
 		GameRegistry.addSmelting(Blocks.TALLGRASS, new ItemStack(IntegratedItems.Straw), 0.5F);
-		//GameRegistry.addSmelting(Items.GOLD_INGOT, new ItemStack(IntegratedItems.ingotRefinedgold, 1, 0), 0.5F);
-		GameRegistry.addSmelting(IntegratedItems.Crown, new ItemStack(IntegratedItems.ingotRefinedgold, 3, 0), 0.5F);
-		GameRegistry.addSmelting(IntegratedItems.goldbucket, new ItemStack(IntegratedItems.moltengold, 1, 0), 0.5F);
-		GameRegistry.addSmelting(IntegratedItems.silverbucket, new ItemStack(IntegratedItems.moltensilver, 1, 0), 0.5F);
-		GameRegistry.addSmelting(IntegratedItems.bronzebucket, new ItemStack(IntegratedItems.moltenbronze, 1, 0), 0.5F);
-		GameRegistry.addSmelting(IntegratedItems.copperbucket, new ItemStack(IntegratedItems.moltencopper, 1, 0), 0.5F);
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.Bag, 1), new Object[] {"TTT", "T T", "TTT", 'T', IntegratedItems.Straw});
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.Sack, 1), new Object[] {"TTT", "TTT", 'T', IntegratedItems.Straw});
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.Crown, 1), new Object[] {"T T", "TTT", 'T', Items.GOLD_INGOT});
@@ -280,18 +312,6 @@ public class IntegratedRecipesRegistry
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.bloodstonelegs, 1), new Object[] {"TTT", "T T", "T T", 'T', IntegratedItems.ingotbloodstone});
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.bloodstoneboots, 1), new Object[] {"T T", "T T", 'T', IntegratedItems.ingotbloodstone});
 		
-		
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotRefinedgold, 1), new Object[] {IntegratedItems.goldbucket});
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotRefinedgold, 1), new Object[] {IntegratedItems.moltengold, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.silverbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotSilver"}}));
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotSilver, 1), new Object[] {IntegratedItems.silverbucket});
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotSilver, 1), new Object[] {IntegratedItems.moltensilver, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.bronzebucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotBronze"}}));
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotBronze, 1), new Object[] {IntegratedItems.bronzebucket});
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotBronze, 1), new Object[] {IntegratedItems.moltenbronze, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
-		CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(IntegratedItems.copperbucket, 1, 0), new Object[] {Boolean.valueOf(true), new Object[]{"Y", "X", 'X', Items.BUCKET, 'Y', "ingotCopper"}}));
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotCopper, 1), new Object[] {IntegratedItems.copperbucket});
-		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.ingotCopper, 1), new Object[] {IntegratedItems.moltencopper, new ItemStack(IntegratedItems.ingotmould, 1, reactioncraft.WILDCARD_VALUE)});
 		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.Metadatacoin, 2, 0), new Object[] {new ItemStack(IntegratedItems.moltencopper), new ItemStack(IntegratedItems.CoinMould, 1, reactioncraft.WILDCARD_VALUE)});
 		GameRegistry.addShapelessRecipe(new ItemStack(IntegratedItems.Metadatacoin, 2, 1), new Object[] {new ItemStack(IntegratedItems.moltenbronze), new ItemStack(IntegratedItems.CoinMould, 1, reactioncraft.WILDCARD_VALUE)});
 		GameRegistry.addRecipe(new ItemStack(IntegratedItems.Metadatacoin, 1, 2), new Object[] {"###", "###", "###", '#', new ItemStack(IntegratedItems.Metadatacoin, 1, 1)});
@@ -335,8 +355,6 @@ public class IntegratedRecipesRegistry
 		//GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.snowblock, 1), new Object[] {"DD", "DD", 'D', Block.ice});
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.MAP, 1), new Object[] {IntegratedItems.Mapinabottle});
-		//GameRegistry.addShapelessRecipe(new ItemStack(Items.BOAT, 1), new Object[] {IntegratedItems.Shipinabottle});
-		//GameRegistry.addRecipe(new ItemStack(IntegratedBlocks.DesertBlocks, 4, 5), new Object[] {"XYX", "YXY", "XYX", 'Y', new ItemStack(IntegratedBlocks.DesertBlocks, 1, 3), 'X', new ItemStack(IntegratedItems.SandStonePaste)});
-		
+		//GameRegistry.addShapelessRecipe(new ItemStack(Items.BOAT, 1), new Object[] {IntegratedItems.Shipinabottle});	
 	}
 }

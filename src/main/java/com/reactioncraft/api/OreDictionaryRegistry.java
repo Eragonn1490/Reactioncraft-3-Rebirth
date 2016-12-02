@@ -23,7 +23,7 @@ public class OreDictionaryRegistry
 //        OreDictionary.registerOre("DarkStone", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 2));
 //       OreDictionary.registerOre("oreDesertGold", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 10));
 //        OreDictionary.registerOre("BloodstoneBrick", new ItemStack(IntegratedBlocks.BloodstoneBrick));
-//        OreDictionary.registerOre("carveddarkstone", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 0));
+        OreDictionary.registerOre("darkStoneCarved", new ItemStack(IntegratedBlocks.DesertBlocks, 1, 7));
 //        OreDictionary.registerOre("darkstonebrick", new ItemStack(IntegratedBlocks.DesertBlockMulti, 1, 3));
         OreDictionary.registerOre("plankWood", new ItemStack(IntegratedBlocks.CherryPlanks));
         OreDictionary.registerOre("CherryWood", new ItemStack(IntegratedBlocks.Cherrywood));

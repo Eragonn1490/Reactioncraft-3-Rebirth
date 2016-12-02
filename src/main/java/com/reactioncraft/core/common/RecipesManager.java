@@ -13,10 +13,12 @@ public class RecipesManager
     	IntegratedRecipesRegistry.loadRecipesforVanilla();
     	IntegratedRecipesRegistry.weaponsRecipesInit();
     	IntegratedRecipesRegistry.foodRecipesInit();
-    	IntegratedRecipesRegistry.loadDesertRecipes();
+    	//IntegratedRecipesRegistry.loadDesertRecipes();
+    	IntegratedRecipesRegistry.desertRecipesInit();
     	IntegratedRecipesRegistry.loadPlants();
     	IntegratedRecipesRegistry.loadORES();
-    	IntegratedRecipesRegistry.loadCurrency();
+    	//IntegratedRecipesRegistry.loadCurrency();
+    	IntegratedRecipesRegistry.currencyRecipesInit();
     	IntegratedRecipesRegistry.loadBookcases();
     	IntegratedRecipesRegistry.loadCore();
     	IntegratedRecipesRegistry.miscRecipesInit();

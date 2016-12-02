@@ -2,6 +2,7 @@ package com.reactioncraft.desert.common;
 
 import java.util.List;
 import java.util.Random;
+
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.blocks.BlockBase;
 import com.reactioncraft.desert.common.EnumHireoGlyphs;

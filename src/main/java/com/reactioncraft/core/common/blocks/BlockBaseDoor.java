@@ -2,6 +2,7 @@ package com.reactioncraft.core.common.blocks;
 
 import java.util.Random;
 import javax.annotation.Nullable;
+
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.integration.instances.*;
 import net.minecraft.block.*;

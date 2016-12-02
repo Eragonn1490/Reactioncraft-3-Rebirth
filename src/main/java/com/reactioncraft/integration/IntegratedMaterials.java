@@ -3,10 +3,14 @@ package com.reactioncraft.integration;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.relauncher.*;
 
 public class IntegratedMaterials
 {
+	
 	public static ToolMaterial  EnumToolMaterialNet;
 	public static ToolMaterial  EnumToolMaterialMeatcleaver;
 	public static ToolMaterial  EnumToolMaterialBat;
@@ -24,6 +28,8 @@ public class IntegratedMaterials
 	public static ArmorMaterial EnumArmorMaterialCrown5;
 	//public static ArmorMaterial EnumArmorMaterialCrown6;
 	
+	@SideOnly(Side.CLIENT)
+	@EventHandler
 	public static void initMaterials()
 	{
 		EnumArmorMaterialKing       = EnumHelper.addArmorMaterial("kingly",     "reactioncraft:goldcrown" , 16, new int[] {1, 2, 3, 1}, 16, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F);

@@ -2,6 +2,7 @@ package com.reactioncraft.glass.common;
 
 import java.util.List;
 import java.util.Random;
+
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.blocks.BlockBase;
 

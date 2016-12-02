@@ -2,7 +2,6 @@ package com.reactioncraft.core;
 
 import javax.annotation.Nullable;
 
-import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.tileEntities.*;
 import com.reactioncraft.machines.common.*;
 import net.minecraft.entity.player.EntityPlayer;

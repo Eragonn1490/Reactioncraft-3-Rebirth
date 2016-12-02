@@ -1,6 +1,5 @@
 package com.reactioncraft.bookcase.common;
 
-//Reactioncraft
 import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.common.blocks.*;
 import com.reactioncraft.integration.instances.*;

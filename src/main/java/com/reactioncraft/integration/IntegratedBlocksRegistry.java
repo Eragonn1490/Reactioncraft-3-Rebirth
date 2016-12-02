@@ -1,12 +1,12 @@
 package com.reactioncraft.integration;
 
-import com.reactioncraft.reactioncraft;
 import com.reactioncraft.core.Generator;
 import com.reactioncraft.core.common.blocks.*;
 import com.reactioncraft.core.common.items.ItemMulti;
 import com.reactioncraft.integration.instances.IntegratedBlocks;
 import com.reactioncraft.machines.common.*;
 import com.reactioncraft.desert.common.*;
+import com.reactioncraft.reactioncraft;
 import com.reactioncraft.bookcase.common.*;
 import com.reactioncraft.ore.common.*;
 import com.reactioncraft.glass.common.*;
