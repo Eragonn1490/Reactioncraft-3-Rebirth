@@ -3,9 +3,9 @@ add changing scroll textures / blocks
 change hardness' of blocks
 rename all blocks / items to camelCase
 re-do imports (Stopped at core.items spade.java)
-fix recipes
-add names to blocks
+fix recipes(mostly finished)
 fix API to actually be mod friendly
 re-add support for railcraft, ic2, forestry
 wait on hownottowin..
 Re-add Mobs
+CHANGE ORE DICTIONARY METADATA AND NAMES!!!!!!!

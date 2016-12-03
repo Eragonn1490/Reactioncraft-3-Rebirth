@@ -10,11 +10,11 @@ import net.minecraft.util.text.TextFormatting;
 
 public enum EnumNores implements IStringSerializable
 {
-    one1		(0, 0,   "one1",       "one1"),
-    one2		(1, 1,   "one2",       "one2"),
-    one3		(2, 2,   "one3",       "one3"),
-    two1	    (3, 3,   "two1",       "two1");
-//    two2		(4, 4,   "two2", 	   "two2"),
+    one1		(0, 0,   "one1",       "one1"), //BlackDiamond
+    one2		(1, 1,   "one2",       "one2"), //Diamond
+    one3		(2, 2,   "one3",       "one3"), //Dragonstone
+    two1	    (3, 3,   "two1",       "two1"), //GoldOre
+    two2		(4, 4,   "two2", 	   "two2"); //Bloodstone
 //    two3		(5, 5,   "two3",       "two3"),
 //    three1		(6, 6,   "three1",     "three1"),
 //    three2		(7, 7,   "three2",     "three2"),

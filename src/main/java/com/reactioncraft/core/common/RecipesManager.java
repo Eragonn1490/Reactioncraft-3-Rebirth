@@ -19,7 +19,6 @@ public class RecipesManager
     	IntegratedRecipesRegistry.loadORES();
     	//IntegratedRecipesRegistry.loadCurrency();
     	IntegratedRecipesRegistry.currencyRecipesInit();
-    	IntegratedRecipesRegistry.loadBookcases();
     	IntegratedRecipesRegistry.loadCore();
     	IntegratedRecipesRegistry.miscRecipesInit();
 	}

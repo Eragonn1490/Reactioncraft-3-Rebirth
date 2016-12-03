@@ -1,4 +1,4 @@
-package com.reactioncraft.core.common.biomes;
+package com.reactioncraft.ore.common.world;
 
 import com.google.common.base.Predicate;
 import com.reactioncraft.desert.common.BlockDesertMulti;
@@ -15,19 +15,19 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-public class ReactionGenMinable extends WorldGenerator
+public class ReactionSurfaceGenMinable extends WorldGenerator
 {
     private final IBlockState oreBlock;
     /** The number of blocks to generate. */
     private final int numberOfBlocks;
     private final Predicate<IBlockState> predicate;
 
-    public ReactionGenMinable(IBlockState state, int blockCount)
+    public ReactionSurfaceGenMinable(IBlockState state, int blockCount)
     {
         this(state, blockCount, BlockStateMatcher.forBlock(IntegratedBlocks.DesertBlocks).where(BlockDesertMulti.TYPE, v->v==EnumDesertBlocks.three2));
     }
 
-    public ReactionGenMinable(IBlockState state, int blockCount, Predicate<IBlockState> p_i45631_3_)
+    public ReactionSurfaceGenMinable(IBlockState state, int blockCount, Predicate<IBlockState> p_i45631_3_)
     {
         this.oreBlock = state;
         this.numberOfBlocks = blockCount;

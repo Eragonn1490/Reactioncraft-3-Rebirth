@@ -13,6 +13,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -40,7 +41,16 @@ public class BlockDesertMulti extends BlockBase
      */
     public int damageDropped(IBlockState state)
     {
-        return ((EnumDesertBlocks)state.getValue(TYPE)).getMetadata();
+    	if (state.getValue(BlockDesertMulti.TYPE) == EnumDesertBlocks.one1)
+		{
+    		//ItemStack coal = new ItemStack(Items.COAL);
+    		//return this.coal;
+    		return ((EnumDesertBlocks)state.getValue(TYPE)).getMetadata();
+		}
+    	else
+    	{
+    		return ((EnumDesertBlocks)state.getValue(TYPE)).getMetadata();
+    	}
     }
 
     /**
@@ -70,6 +80,7 @@ public class BlockDesertMulti extends BlockBase
     {
         return ((EnumDesertBlocks)state.getValue(TYPE)).getMetadata();
     }
+    
 
     protected BlockStateContainer createBlockState()
     {

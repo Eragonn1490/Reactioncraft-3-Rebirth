@@ -1,15 +1,25 @@
-Features 1.10.x: 
-Added Scrap Feature. When working with iron some items, as long as you have a hammer in your inventory or crafting table it will drop Iron Shavings. 
-Added Net Levels.    now shows max uses, level of the net and hilt used in crafting.
-Added New Crowns
-Added Glowing Stained Glass
-Added Hireoglyphics
-Added Bone Drops for most mobs
-Added Foods
-Added Requested Feature: More Bookcases & Shelves (Add Books / Scrolls to change texture, right click with empty hand to recover book)
-Changed Recipe for making Edible Flesh.
+Changes 1.10.x: 
+
+Added: Leftovers... When working with iron some items, as long as you have a hammer in your inventory or crafting table it will drop Iron Shavings. 
+Added: Iron Shavings (4 needed to make an iron dust)
+Added: Net Levels.    now shows max uses, level of the net and hilt used in crafting.
+Added: New Crowns
+Added: Glowing Stained Glass
+Added: Hireoglyphics
+Added: Bone Drops for most mobs
+Added: Foods
+
+
+New Feature: as requested more Bookcases & Shelves (Add Books / Scrolls to change texture, right click with empty hand to recover book)
+
+
+Changes: Recipe for making Edible Flesh.
+Changes: Recipe for making Refined Gold Ingots
+
+
 Reaction Desert Biome: No longer has stone under it. 
+Reaction Desert Biome: Generates Custom Ores 
 
 
 Old Features:
-Same from 1.6.4 Last Released Version (with changes for 1.10.x and things to come back during the next few updates)
+News: Mostly the same from 1.6.4 Last Released Version (with changes for 1.10.x and things to come back during the next few updates)
