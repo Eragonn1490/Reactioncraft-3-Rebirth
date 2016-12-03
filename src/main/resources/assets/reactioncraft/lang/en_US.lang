@@ -60,6 +60,7 @@ tile.netherOres.Block.name=Black Diamond Ore
 tile.netherOres.Block1.name=Nether Diamond Ore
 tile.netherOres.Block2.name=Dragonstone Ore
 tile.netherOres.Block3.name=Nether Gold Ore
+tile.netherOres.Block4.name=Bloodstone
 tile.endOres.block.name=Wizimite Ore
 tile.CherryPlanks.name=Cherry Planks
 tile.bloodstonebricks.name=Bloodstone Bricks
