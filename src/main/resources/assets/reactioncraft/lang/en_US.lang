@@ -1,7 +1,68 @@
-#Blocks
+#Creativetabs
 itemGroup.ReactioncraftItems=RC: Items
 itemGroup.Reactioncraft=RC: Blocks
 itemGroup.Reactioncraftfood=RC: Foods
+
+#Blocks
+tile.sands.Block.name=Sand
+tile.desertblocks.Block.name=Sand Bricks
+tile.desertblocks.Block1.name=Dark Cobblestone
+tile.desertblocks.Block2.name=Chiseled Darkstone
+tile.desertblocks.Block3.name=Granite
+tile.desertblocks.Block4.name=Cracked Darkstone Brick
+tile.desertblocks.Block5.name=Mossy Darkstone Brick
+tile.desertblocks.Block6.name=Darkstone Brick
+tile.desertblocks.Block7.name=Darkstone
+tile.desertblocks.Block8.name=Chiseled Granite
+tile.hireoglyph.Block.name=Brown Hireoglyph 1
+tile.hireoglyph.Block1.name=Brown Hireoglyph 2
+tile.hireoglyph.Block2.name=Brown Hireoglyph 3
+tile.hireoglyph.Block3.name=Blue Hireoglyph 1
+tile.hireoglyph.Block4.name=Blue Hireoglyph 2
+tile.hireoglyph.Block5.name=Blue Hireoglyph 3
+tile.hireoglyph.Block6.name=Cyan Hireoglyph 1
+tile.hireoglyph.Block7.name=Cyan Hireoglyph 2
+tile.hireoglyph.Block8.name=Cyan Hireoglyph 3
+tile.hireoglyph.Block9.name=Gold Hireoglyph 1
+tile.hireoglyph.Block10.name=Gold Hireoglyph 2
+tile.hireoglyph.Block11.name=Gold Hireoglyph 3
+tile.hireoglyph.Block12.name=Weathered Hireoglyph
+tile.bookcases.Block.name=Empty Bookcase
+tile.bookcases.Block1.name=Webbed Bookcase-Empty
+tile.bookcases.Block2.name=Webbed Bookcase-Full
+tile.bookcases.Block3.name=Scrollcase:3
+tile.bookcases.Block4.name=Bookcase:1
+tile.bookcases.Block5.name=Bookcase:2
+tile.bookcases.Block6.name=Bookcase:3
+tile.glowingglass.Block.name=Glowing Glass
+tile.glowingglass.Block1.name=Orange Glowing Glass
+tile.glowingglass.Block2.name=Magenta Glowing Glass
+tile.glowingglass.Block3.name=Light Blue Glowing Glass
+tile.glowingglass.Block4.name=Yellow Glowing Glass
+tile.glowingglass.Block5.name=Lime Green Glowing Glass
+tile.glowingglass.Block6.name=Pink Glowing Glass
+tile.glowingglass.Block7.name=Dark Gray Glowing Glass
+tile.glowingglass.Block8.name=Light Gray Glowing Glass
+tile.glowingglass.Block9.name=Cyan Glowing Glass
+tile.glowingglass.Block10.name=Purple Glowing Glass
+tile.glowingglass.Block11.name=Blue Glowing Glass
+tile.glowingglass.Block12.name=Brown Glowing Glass
+tile.glowingglass.Block13.name=Green Glowing Glass
+tile.glowingglass.Block14.name=Red Glowing Glass
+tile.glowingglass.Block15.name=Black Glowing Glass
+tile.surfaceOres.Block.name=Coal Ore
+tile.surfaceOres.Block1.name=Gemstone Ore
+tile.surfaceOres.Block2.name=Gemstone Ore
+tile.surfaceOres.Block3.name=Desert Gold
+tile.surfaceOres.Block4.name=Silver Ore
+tile.surfaceOres.Block5.name=Copper Ore
+tile.netherOres.Block.name=Black Diamond Ore
+tile.netherOres.Block1.name=Nether Diamond Ore
+tile.netherOres.Block2.name=Dragonstone Ore
+tile.netherOres.Block3.name=Nether Gold Ore
+tile.endOres.block.name=Wizimite Ore
+tile.CherryPlanks.name=Cherry Planks
+tile.bloodstonebricks.name=Bloodstone Bricks
 
 #Items
 item.reactioncraft.caught.name=Caught
